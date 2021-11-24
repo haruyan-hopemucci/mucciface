@@ -57,8 +57,28 @@ class muccifaceView extends WatchUi.WatchFace {
     function onShow() as Void {
     }
 
+    function onPartialUpdate(dc as Dc){
+      dc.setClip(80,170,44,34);
+        var clockTime = System.getClockTime();
+        var viewSecond = View.findDrawableById("SecondLabel") as Text;
+        var secString = Lang.format("$1$", [clockTime.sec.format("%02d")]);
+        viewSecond.setText(secString);
+        View.onUpdate(dc);
+      dc.setClip(124,96,18,18);
+        if(count == 0){
+          bmpMucciL1.draw(dc);
+          // bmpMucciR1.draw(dc);
+          count = 1;
+        }else{
+          bmpMucciL2.draw(dc);
+          // bmpMucciR2.draw(dc);
+          count = 0;
+        }
+    }
+
     // Update the view
     function onUpdate(dc as Dc) as Void {
+      dc.setClip(0,0,208,208);
         // Get and show the current time
         var clockTime = System.getClockTime();
         var hview = View.findDrawableById("HLabel") as Text;
