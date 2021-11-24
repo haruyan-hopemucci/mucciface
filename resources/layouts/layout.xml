@@ -1,0 +1,10 @@
+<layout id="WatchFace">
+    <label id="DayLabel" x="120" y="35" font="Graphics.FONT_LARGE" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
+    <label id="HLabel" x="35" y="15" font="Graphics.FONT_NUMBER_THAI_HOT" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
+    <label id="MLabel" x="35" y="70" font="Graphics.FONT_NUMBER_HOT" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
+    <label id="SecondLabel" x="center" y="170" font="Graphics.FONT_NUMBER_MILD" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    <label id="StepLabel" x="144" y="90" font="Graphics.FONT_LARGE" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
+    <label id="BattLabel" x="160" y="126" font="Graphics.FONT_SMALL" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
+    <!-- <bitmap id="BmpMucciLeft" x="30" y="150" filename="./images/mucci1.png" />
+    <bitmap id="BmpMucciRight" x="160" y="150" filename="./images/mucci2.png" /> -->
+</layout>

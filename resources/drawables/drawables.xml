@@ -1,0 +1,13 @@
+<drawables>
+    <bitmap id="LauncherIcon" filename="launcher_icon.png" />
+    <bitmap id="BmpMucci1" filename="./images/mucci1.png" />
+    <bitmap id="BmpMucci2" filename="./images/mucci2.png" />
+    <bitmap id="BmpCharge" filename="./images/chargeicon.png" />
+    <drawable-list id="shapes" x="116" y="84" width="104" height="40" background="Graphics.COLOR_TRANSPARENT">
+      <shape type="rectangle" x="0" y="0" width="200" height="40" color="Graphics.COLOR_TRANSPARENT" border_color="Graphics.COLOR_BLUE" border_width="2" corner_radius="20" />
+    </drawable-list>
+    <drawable-list id="BattOuter" x="124" y="128" background="Graphics.COLOR_TRANSPARENT">
+      <shape type="rectangle" x="0" y="0" width="32" height="18" color="Graphics.COLOR_TRANSPARENT" border_color="Graphics.COLOR_WHITE" border_width="1" />
+      <shape type="rectangle" x="31" y="6" width="2" height="6" color="Graphics.COLOR_WHITE" />
+    </drawable-list>
+</drawables>

@@ -1,0 +1,1 @@
+FONT_LARGEのフォント高さは18px

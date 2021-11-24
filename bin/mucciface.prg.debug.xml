@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="C:\Data\work\garmin\garmin-workspace\mucciface\manifest.xml"/>
+<pcToLineNum>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="1" lineNum="17" parent="globals/muccifaceView" pc="268435456" symbol="initialize"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="1" lineNum="18" parent="globals/muccifaceView" pc="268435460" symbol="initialize"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="1" lineNum="19" parent="globals/muccifaceView" pc="268435478" symbol="initialize"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="1" lineNum="20" parent="globals/muccifaceView" pc="268435491" symbol="initialize"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="1" lineNum="25" parent="globals/muccifaceView" pc="268435585" symbol="initialize"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="1" lineNum="40" parent="globals/muccifaceView" pc="268435679" symbol="initialize"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="1" lineNum="41" parent="globals/muccifaceView" pc="268435721" symbol="initialize"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="1" lineNum="42" parent="globals/muccifaceView" pc="268435763" symbol="initialize"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="2" lineNum="50" parent="globals/muccifaceView" pc="268435858" symbol="onLayout"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="2" lineNum="51" parent="globals/muccifaceView" pc="268435862" symbol="onLayout"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="3" lineNum="57" parent="globals/muccifaceView" pc="268435900" symbol="onShow"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="61" parent="globals/muccifaceView" pc="268435905" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="63" parent="globals/muccifaceView" pc="268435909" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="64" parent="globals/muccifaceView" pc="268435926" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="67" parent="globals/muccifaceView" pc="268435950" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="68" parent="globals/muccifaceView" pc="268435984" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="69" parent="globals/muccifaceView" pc="268436008" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="70" parent="globals/muccifaceView" pc="268436066" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="72" parent="globals/muccifaceView" pc="268436080" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="73" parent="globals/muccifaceView" pc="268436104" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="74" parent="globals/muccifaceView" pc="268436162" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="76" parent="globals/muccifaceView" pc="268436176" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="77" parent="globals/muccifaceView" pc="268436200" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="78" parent="globals/muccifaceView" pc="268436219" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="79" parent="globals/muccifaceView" pc="268436229" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="80" parent="globals/muccifaceView" pc="268436267" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="82" parent="globals/muccifaceView" pc="268436281" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="83" parent="globals/muccifaceView" pc="268436305" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="84" parent="globals/muccifaceView" pc="268436361" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="85" parent="globals/muccifaceView" pc="268436371" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="86" parent="globals/muccifaceView" pc="268436381" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="87" parent="globals/muccifaceView" pc="268436429" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="89" parent="globals/muccifaceView" pc="268436443" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="90" parent="globals/muccifaceView" pc="268436467" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="91" parent="globals/muccifaceView" pc="268436490" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="94" parent="globals/muccifaceView" pc="268436524" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="96" parent="globals/muccifaceView" pc="268436544" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="97" parent="globals/muccifaceView" pc="268436561" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="99" parent="globals/muccifaceView" pc="268436581" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="101" parent="globals/muccifaceView" pc="268436597" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="103" parent="globals/muccifaceView" pc="268436617" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="105" parent="globals/muccifaceView" pc="268436630" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="107" parent="globals/muccifaceView" pc="268436650" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="108" parent="globals/muccifaceView" pc="268436686" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="109" parent="globals/muccifaceView" pc="268436727" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="110" parent="globals/muccifaceView" pc="268436751" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="111" parent="globals/muccifaceView" pc="268436787" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="4" lineNum="113" parent="globals/muccifaceView" pc="268436810" symbol="onUpdate"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="5" lineNum="119" parent="globals/muccifaceView" pc="268436831" symbol="onHide"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="6" lineNum="123" parent="globals/muccifaceView" pc="268436836" symbol="onExitSleep"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="7" lineNum="127" parent="globals/muccifaceView" pc="268436841" symbol="onEnterSleep"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="8" lineNum="6" parent="globals/muccifaceView" pc="268438576" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceView.mc" id="8" lineNum="6" parent="globals/muccifaceView" pc="268438576" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceApp.mc" id="10" lineNum="7" parent="globals/muccifaceApp" pc="268436846" symbol="initialize"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceApp.mc" id="10" lineNum="8" parent="globals/muccifaceApp" pc="268436850" symbol="initialize"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceApp.mc" id="11" lineNum="12" parent="globals/muccifaceApp" pc="268436869" symbol="onStart"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceApp.mc" id="12" lineNum="16" parent="globals/muccifaceApp" pc="268436874" symbol="onStop"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceApp.mc" id="13" lineNum="20" parent="globals/muccifaceApp" pc="268436879" symbol="getInitialView"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceApp.mc" id="13" lineNum="21" parent="globals/muccifaceApp" pc="268436883" symbol="getInitialView"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceApp.mc" id="14" lineNum="5" parent="globals/muccifaceApp" pc="268438489" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceApp.mc" id="14" lineNum="5" parent="globals/muccifaceApp" pc="268438489" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceApp.mc" id="15" lineNum="26" parent="globals" pc="268436921" symbol="getApp"/>
+<entry filename="C:\\Data\\work\\garmin\\garmin-workspace\\mucciface\\source\\muccifaceApp.mc" id="15" lineNum="27" parent="globals" pc="268436933" symbol="getApp"/>
+<entry filename="Rez" id="17" lineNum="15" parent="globals/Rez/Drawables/shapes" pc="268436950" symbol="initialize"/>
+<entry filename="Rez" id="17" lineNum="16" parent="globals/Rez/Drawables/shapes" pc="268436954" symbol="initialize"/>
+<entry filename="Rez" id="18" lineNum="19" parent="globals/Rez/Drawables/shapes" pc="268436979" symbol="draw"/>
+<entry filename="Rez" id="18" lineNum="20" parent="globals/Rez/Drawables/shapes" pc="268436983" symbol="draw"/>
+<entry filename="Rez" id="18" lineNum="21" parent="globals/Rez/Drawables/shapes" pc="268437019" symbol="draw"/>
+<entry filename="Rez" id="18" lineNum="22" parent="globals/Rez/Drawables/shapes" pc="268437051" symbol="draw"/>
+<entry filename="Rez" id="18" lineNum="24" parent="globals/Rez/Drawables/shapes" pc="268437087" symbol="draw"/>
+<entry filename="Rez" id="18" lineNum="25" parent="globals/Rez/Drawables/shapes" pc="268437123" symbol="draw"/>
+<entry filename="Rez" id="18" lineNum="26" parent="globals/Rez/Drawables/shapes" pc="268437140" symbol="draw"/>
+<entry filename="Rez" id="18" lineNum="27" parent="globals/Rez/Drawables/shapes" pc="268437177" symbol="draw"/>
+<entry filename="Rez" id="18" lineNum="28" parent="globals/Rez/Drawables/shapes" pc="268437213" symbol="draw"/>
+<entry filename="Rez" id="19" lineNum="13" parent="globals/Rez/Drawables/shapes" pc="268438533" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="19" lineNum="13" parent="globals/Rez/Drawables/shapes" pc="268438533" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="20" lineNum="41" parent="globals/Rez/Drawables/BattOuter" pc="268437251" symbol="initialize"/>
+<entry filename="Rez" id="20" lineNum="42" parent="globals/Rez/Drawables/BattOuter" pc="268437255" symbol="initialize"/>
+<entry filename="Rez" id="21" lineNum="45" parent="globals/Rez/Drawables/BattOuter" pc="268437280" symbol="draw"/>
+<entry filename="Rez" id="21" lineNum="46" parent="globals/Rez/Drawables/BattOuter" pc="268437284" symbol="draw"/>
+<entry filename="Rez" id="21" lineNum="47" parent="globals/Rez/Drawables/BattOuter" pc="268437320" symbol="draw"/>
+<entry filename="Rez" id="21" lineNum="48" parent="globals/Rez/Drawables/BattOuter" pc="268437352" symbol="draw"/>
+<entry filename="Rez" id="21" lineNum="50" parent="globals/Rez/Drawables/BattOuter" pc="268437388" symbol="draw"/>
+<entry filename="Rez" id="21" lineNum="51" parent="globals/Rez/Drawables/BattOuter" pc="268437424" symbol="draw"/>
+<entry filename="Rez" id="21" lineNum="51" parent="globals/Rez/Drawables/BattOuter" pc="268437441" symbol="draw"/>
+<entry filename="Rez" id="21" lineNum="52" parent="globals/Rez/Drawables/BattOuter" pc="268437473" symbol="draw"/>
+<entry filename="Rez" id="21" lineNum="53" parent="globals/Rez/Drawables/BattOuter" pc="268437509" symbol="draw"/>
+<entry filename="Rez" id="21" lineNum="55" parent="globals/Rez/Drawables/BattOuter" pc="268437541" symbol="draw"/>
+<entry filename="Rez" id="21" lineNum="56" parent="globals/Rez/Drawables/BattOuter" pc="268437577" symbol="draw"/>
+<entry filename="Rez" id="22" lineNum="39" parent="globals/Rez/Drawables/BattOuter" pc="268438552" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="22" lineNum="39" parent="globals/Rez/Drawables/BattOuter" pc="268438552" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="23" lineNum="2" parent="globals/Rez/Drawables" pc="268438532" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="24" lineNum="63" parent="globals/Rez/Fonts" pc="268438572" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="25" lineNum="65" parent="globals/Rez/JsonData" pc="268438574" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="26" lineNum="74" parent="globals/Rez/Layouts" pc="268437610" symbol="WatchFace"/>
+<entry filename="Rez" id="26" lineNum="76" parent="globals/Rez/Layouts" pc="268437622" symbol="WatchFace"/>
+<entry filename="Rez" id="26" lineNum="77" parent="globals/Rez/Layouts" pc="268437755" symbol="WatchFace"/>
+<entry filename="Rez" id="26" lineNum="78" parent="globals/Rez/Layouts" pc="268437888" symbol="WatchFace"/>
+<entry filename="Rez" id="26" lineNum="79" parent="globals/Rez/Layouts" pc="268438021" symbol="WatchFace"/>
+<entry filename="Rez" id="26" lineNum="80" parent="globals/Rez/Layouts" pc="268438154" symbol="WatchFace"/>
+<entry filename="Rez" id="26" lineNum="81" parent="globals/Rez/Layouts" pc="268438287" symbol="WatchFace"/>
+<entry filename="Rez" id="26" lineNum="83" parent="globals/Rez/Layouts" pc="268438420" symbol="WatchFace"/>
+<entry filename="Rez" id="27" lineNum="67" parent="globals/Rez/Layouts" pc="268438573" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="28" lineNum="88" parent="globals/Rez/Menus" pc="268438571" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="29" lineNum="90" parent="globals/Rez/Strings" pc="268438575" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="30" lineNum="1" parent="globals/Rez" pc="268438508" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="30" lineNum="1" parent="globals/Rez" pc="268438508" symbol="&lt;init&gt;"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry field="true" id="15" symbol="BmpCharge"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry id="4" module="true" symbol="globals/Rez/Menus"/>
+<entry field="true" id="23" symbol="bmpMucciR2"/>
+<entry field="true" id="22" symbol="bmpMucciR1"/>
+<entry field="true" id="21" symbol="bmpMucciL2"/>
+<entry field="true" id="20" symbol="bmpMucciL1"/>
+<entry id="9" object="true" symbol="muccifaceView"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="19" symbol="AppName"/>
+<entry id="8" module="true" symbol="globals/Rez/Strings"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry id="8389345" symbol="rezId"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry field="true" id="24" symbol="battOuter"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="8389348" symbol="font"/>
+<entry id="12" module="true" symbol="Menus"/>
+<entry id="8389275" method="true" symbol="getApp"/>
+<entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+<entry field="true" id="8389850" symbol="count"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="8389376" method="true" symbol="onEnterSleep"/>
+<entry field="true" id="8389063" symbol="identifier"/>
+<entry id="8389349" symbol="justification"/>
+<entry field="true" id="25" symbol="battCharge"/>
+<entry id="7" module="true" symbol="globals/Rez/JsonData"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry id="8389377" method="true" symbol="onExitSleep"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="10" object="true" symbol="muccifaceApp"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry id="8389068" method="true" symbol="draw"/>
+<entry field="true" id="16" symbol="LauncherIcon"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry field="true" id="14" symbol="BmpMucci2"/>
+<entry field="true" id="13" symbol="BmpMucci1"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry field="true" id="17" object="true" symbol="shapes"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="18" object="true" symbol="BattOuter"/>
+<entry id="8389347" symbol="color"/>
+<entry id="11" module="true" symbol="Layouts"/>
+<entry id="5" module="true" symbol="globals/Rez/Fonts"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry id="8388635" module="true" symbol="Application"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268435899" name="dc" stackId="1" startPc="268435858"/>
+<entry endPc="268436829" name="battValue" stackId="18" startPc="268435909"/>
+<entry endPc="268436829" name="secString" stackId="7" startPc="268435909"/>
+<entry endPc="268436829" name="dayString" stackId="16" startPc="268435909"/>
+<entry endPc="268436829" name="timeinfo" stackId="13" startPc="268435909"/>
+<entry endPc="268436829" name="info" stackId="9" startPc="268435909"/>
+<entry endPc="268436829" name="dayLabel" stackId="12" startPc="268435909"/>
+<entry endPc="268436829" name="mview" stackId="4" startPc="268435909"/>
+<entry endPc="268436829" name="clockTime" stackId="2" startPc="268435909"/>
+<entry endPc="268436829" name="stepCount" stackId="10" startPc="268435909"/>
+<entry endPc="268436829" name="hview" stackId="3" startPc="268435909"/>
+<entry endPc="268436829" name="str" stackId="5" startPc="268435909"/>
+<entry endPc="268436829" name="day" stackId="15" startPc="268435909"/>
+<entry endPc="268436829" name="viewSecond" stackId="6" startPc="268435909"/>
+<entry endPc="268436829" name="stepString" stackId="11" startPc="268435909"/>
+<entry endPc="268436829" name="dow" stackId="14" startPc="268435909"/>
+<entry endPc="268436829" name="viewStep" stackId="8" startPc="268435909"/>
+<entry endPc="268436829" name="battLabel" stackId="17" startPc="268435909"/>
+<entry arg="true" endPc="268436830" name="dc" stackId="1" startPc="268435905"/>
+<entry arg="true" endPc="268436873" name="state" stackId="1" startPc="268436869"/>
+<entry arg="true" endPc="268436878" name="state" stackId="1" startPc="268436874"/>
+<entry arg="true" endPc="268437250" name="dc" stackId="1" startPc="268436979"/>
+<entry arg="true" endPc="268437609" name="dc" stackId="1" startPc="268437280"/>
+<entry endPc="268438486" name="rez_cmp_local_text_StepLabel" stackId="6" startPc="268437622"/>
+<entry endPc="268438486" name="rez_cmp_local_text_SecondLabel" stackId="5" startPc="268437622"/>
+<entry endPc="268438486" name="rez_cmp_local_text_MLabel" stackId="4" startPc="268437622"/>
+<entry endPc="268438486" name="rez_cmp_local_text_DayLabel" stackId="2" startPc="268437622"/>
+<entry endPc="268438486" name="rez_cmp_local_text_BattLabel" stackId="7" startPc="268437622"/>
+<entry endPc="268438486" name="rez_cmp_local_text_HLabel" stackId="3" startPc="268437622"/>
+<entry arg="true" endPc="268438487" name="dc" stackId="1" startPc="268437610"/>
+</localVars>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="BmpMucci1"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="BmpMucci2"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="BmpCharge"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/muccifaceApp" offset="158" parentId="globals" symbolId="muccifaceApp" type="class"/>
+<dataEntry label="globals/Rez" offset="229" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/Rez/Drawables" offset="308" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Drawables/shapes" offset="387" parentId="Drawables" symbolId="shapes" type="class"/>
+<dataEntry label="globals/Rez/Drawables/BattOuter" offset="442" parentId="Drawables" symbolId="BattOuter" type="class"/>
+<dataEntry label="globals/Rez/Menus" offset="497" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="528" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="559" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/JsonData" offset="598" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="629" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/muccifaceView" offset="668" parentId="globals" symbolId="muccifaceView" type="class"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435857" name="initialize" parent="muccifaceView" startPc="268435456">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435899" name="onLayout" parent="muccifaceView" startPc="268435858">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435904" name="onShow" parent="muccifaceView" startPc="268435900">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436830" name="onUpdate" parent="muccifaceView" startPc="268435905">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436835" name="onHide" parent="muccifaceView" startPc="268436831">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436840" name="onExitSleep" parent="muccifaceView" startPc="268436836">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436845" name="onEnterSleep" parent="muccifaceView" startPc="268436841">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268438594" name="&lt;init&gt;" parent="muccifaceView" startPc="268438576">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436868" name="initialize" parent="muccifaceApp" startPc="268436846">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436873" name="onStart" parent="muccifaceApp" startPc="268436869">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436878" name="onStop" parent="muccifaceApp" startPc="268436874">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436920" name="getInitialView" parent="muccifaceApp" startPc="268436879">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268438507" name="&lt;init&gt;" parent="muccifaceApp" startPc="268438489">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436949" name="getApp" startPc="268436921">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436978" name="initialize" parent="shapes" startPc="268436950">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437250" name="draw" parent="shapes" startPc="268436979">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268438551" name="&lt;init&gt;" parent="shapes" startPc="268438533">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437279" name="initialize" parent="BattOuter" startPc="268437251">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437609" name="draw" parent="BattOuter" startPc="268437280">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268438570" name="&lt;init&gt;" parent="BattOuter" startPc="268438552">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268438532" name="&lt;init&gt;" parent="Drawables" startPc="268438532">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268438572" name="&lt;init&gt;" parent="Fonts" startPc="268438572">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268438574" name="&lt;init&gt;" parent="JsonData" startPc="268438574">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438487" name="WatchFace" parent="Layouts" startPc="268437610">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268438573" name="&lt;init&gt;" parent="Layouts" startPc="268438573">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268438571" name="&lt;init&gt;" parent="Menus" startPc="268438571">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268438575" name="&lt;init&gt;" parent="Strings" startPc="268438575">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268438531" name="&lt;init&gt;" parent="Rez" startPc="268438508">
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>
