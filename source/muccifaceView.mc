@@ -13,6 +13,7 @@ class muccifaceView extends WatchUi.WatchFace {
     var shapes;
     var battOuter;
     var battCharge;
+    var fontDigits;
 
     function initialize() {
         WatchFace.initialize();
@@ -44,11 +45,14 @@ class muccifaceView extends WatchUi.WatchFace {
           :locX=>132,
           :locY=>130
         });
+        fontDigits = WatchUi.loadResource( Rez.Fonts.font_digits );
     }
 
     // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.WatchFace(dc));
+        View.findDrawableById("HLabel").setFont(fontDigits);
+        View.findDrawableById("MLabel").setFont(fontDigits);
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -131,6 +135,8 @@ class muccifaceView extends WatchUi.WatchFace {
           battCharge.draw(dc);
         }
         battOuter.draw(dc);
+        // dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        // dc.drawText(104,120,fontDigits,"1234",Graphics.TEXT_JUSTIFY_CENTER);
     }
 
     // Called when this View is removed from the screen. Save the
