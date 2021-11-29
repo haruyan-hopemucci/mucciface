@@ -11,6 +11,7 @@ class muccifaceView extends WatchUi.WatchFace {
     var bmpMucciR1;
     var bmpMucciR2;
     var bmpMucciLarge1;
+    var bmpMucciLarge2;
     var shapes;
     var battOuter;
     var battCharge;
@@ -31,6 +32,11 @@ class muccifaceView extends WatchUi.WatchFace {
         });
         bmpMucciLarge1 = new WatchUi.Bitmap({
           :rezId=>Rez.Drawables.BmpMucciL1,
+          :locX=>124,
+          :locY=>90
+        });
+        bmpMucciLarge2 = new WatchUi.Bitmap({
+          :rezId=>Rez.Drawables.BmpMucciL2,
           :locX=>124,
           :locY=>90
         });
@@ -74,7 +80,8 @@ class muccifaceView extends WatchUi.WatchFace {
         var secString = Lang.format("$1$", [clockTime.sec.format("%02d")]);
         viewSecond.setText(secString);
         View.onUpdate(dc);
-      dc.setClip(124,96,18,18);
+      // dc.setClip(124,96,18,18);
+      dc.setClip(124,90,22,28);
         if(count == 0){
           // bmpMucciL1.draw(dc);
           bmpMucciLarge1.draw(dc);
@@ -82,7 +89,7 @@ class muccifaceView extends WatchUi.WatchFace {
           count = 1;
         }else{
           // bmpMucciL2.draw(dc);
-          bmpMucciLarge1.draw(dc);
+          bmpMucciLarge2.draw(dc);
           // bmpMucciR2.draw(dc);
           count = 0;
         }
@@ -132,7 +139,7 @@ class muccifaceView extends WatchUi.WatchFace {
           count = 1;
         }else{
           // bmpMucciL2.draw(dc);
-          bmpMucciLarge1.draw(dc);
+          bmpMucciLarge2.draw(dc);
           // bmpMucciR2.draw(dc);
           count = 0;
         }
