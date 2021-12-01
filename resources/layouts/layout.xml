@@ -6,6 +6,7 @@
     <label id="SecondLabel" x="center" y="170" font="Graphics.FONT_NUMBER_MILD" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
     <label id="StepLabel" x="148" y="90" font="Graphics.FONT_TINY" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
     <label id="BattLabel" x="160" y="124" font="Graphics.FONT_SMALL" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
+    <!-- <label id="MuttiLogoLabel" x="156" y="64" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" text="MUCCI" /> -->
     <!-- <bitmap id="BmpMucciLeft" x="30" y="150" filename="./images/mucci1.png" />
     <bitmap id="BmpMucciRight" x="160" y="150" filename="./images/mucci2.png" /> -->
 </layout>

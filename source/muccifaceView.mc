@@ -12,10 +12,16 @@ class muccifaceView extends WatchUi.WatchFace {
     var bmpMucciR2;
     var bmpMucciLarge1;
     var bmpMucciLarge2;
+    var bmpMucciSit1;
+    var bmpMucciSit2;
     var shapes;
     var battOuter;
     var battCharge;
     var fontDigits;
+    var memorySteps;
+    var walkStopTime;
+    var isWalking;
+    var _THRESHOLD_WALK_STOP = 60;
 
     function initialize() {
         WatchFace.initialize();
@@ -57,7 +63,12 @@ class muccifaceView extends WatchUi.WatchFace {
           :locX=>132,
           :locY=>130
         });
+        bmpMucciSit1 = new WatchUi.Bitmap({:rezId=>Rez.Drawables.BmpMucciSit1, :locX=>132, :locY=>69});
+        bmpMucciSit2 = new WatchUi.Bitmap({:rezId=>Rez.Drawables.BmpMucciSit2, :locX=>132, :locY=>69});
         fontDigits = WatchUi.loadResource( Rez.Fonts.font_digits );
+        memorySteps = -1;
+        walkStopTime = Time.now();
+        isWalking = true;
     }
 
     // Load your resources here
@@ -71,6 +82,7 @@ class muccifaceView extends WatchUi.WatchFace {
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() as Void {
+
     }
 
     function onPartialUpdate(dc as Dc){
@@ -81,18 +93,41 @@ class muccifaceView extends WatchUi.WatchFace {
         viewSecond.setText(secString);
         View.onUpdate(dc);
       // dc.setClip(124,96,18,18);
+      /*
       dc.setClip(124,90,22,28);
         if(count == 0){
           // bmpMucciL1.draw(dc);
           bmpMucciLarge1.draw(dc);
+          bmpMucciSit1.draw(dc);
           // bmpMucciR1.draw(dc);
           count = 1;
         }else{
           // bmpMucciL2.draw(dc);
           bmpMucciLarge2.draw(dc);
+          bmpMucciSit2.draw(dc);
           // bmpMucciR2.draw(dc);
           count = 0;
         }
+      */
+      if(isWalking){
+        dc.setClip(124,90,22,28);
+        if(count == 0){
+          bmpMucciLarge1.draw(dc);
+          count = 1;
+        }else{
+          bmpMucciLarge2.draw(dc);
+          count = 0;
+        }
+      }else{
+        dc.setClip(124,69,22,17);
+        if(count == 0){
+          bmpMucciSit1.draw(dc);
+          count = 1;
+        }else{
+          bmpMucciSit2.draw(dc);
+          count = 0;
+        }
+      }
     }
 
     // Update the view
@@ -129,21 +164,48 @@ class muccifaceView extends WatchUi.WatchFace {
         var battValue = System.getSystemStats().battery;
         battLabel.setText(battValue.format("%3.0f") + "%");
 
+        // 停止判定(stepsが増加していない状態が60秒以上続いているか)
+        // 初期設定
+        if(memorySteps < 0){
+          memorySteps = stepCount;
+        }
+        // 日付変更時リセット
+        if(memorySteps > stepCount){
+          memorySteps = stepCount;
+        }
+        if(memorySteps == stepCount){
+          var dtime = Time.now().subtract(walkStopTime);
+          if(dtime.value() >= _THRESHOLD_WALK_STOP){
+            isWalking = false;
+          }
+        }else{
+          isWalking = true;
+          memorySteps = stepCount;
+        }
+
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
 
-        if(count == 0){
-          // bmpMucciL1.draw(dc);
-          bmpMucciLarge1.draw(dc);
-          // bmpMucciR1.draw(dc);
-          count = 1;
-        }else{
-          // bmpMucciL2.draw(dc);
-          bmpMucciLarge2.draw(dc);
-          // bmpMucciR2.draw(dc);
-          count = 0;
-        }
         shapes.draw(dc);
+        if(isWalking){
+          dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+          dc.drawText(140, 64, Graphics.FONT_XTINY, "MUCCI", Graphics.TEXT_JUSTIFY_LEFT);
+          if(count == 0){
+            bmpMucciLarge1.draw(dc);
+            count = 1;
+          }else{
+            bmpMucciLarge2.draw(dc);
+            count = 0;
+          }
+        }else{
+          if(count == 0){
+            bmpMucciSit1.draw(dc);
+            count = 1;
+          }else{
+            bmpMucciSit2.draw(dc);
+            count = 0;
+          }
+        }
         // バッテリーグラフィック表示
         dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
         dc.fillRectangle(126, 130, battValue*27/100, 13);

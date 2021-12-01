@@ -4,6 +4,8 @@
     <bitmap id="BmpMucci2" filename="./images/mucci2.png" />
     <bitmap id="BmpMucciL1" filename="./images/mucciL1.png" />
     <bitmap id="BmpMucciL2" filename="./images/mucciL2.png" />
+    <bitmap id="BmpMucciSit1" filename="./images/mucci_sit_1.png" />
+    <bitmap id="BmpMucciSit2" filename="./images/mucci_sit_2.png" />
     <bitmap id="BmpCharge" filename="./images/chargeicon.png" />
     <drawable-list id="shapes" x="116" y="84" width="104" height="40" background="Graphics.COLOR_TRANSPARENT">
       <shape type="rectangle" x="0" y="0" width="200" height="40" color="Graphics.COLOR_TRANSPARENT" border_color="Graphics.COLOR_WHITE" border_width="2" corner_radius="20" />
