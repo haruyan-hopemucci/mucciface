@@ -119,7 +119,7 @@ class muccifaceView extends WatchUi.WatchFace {
           count = 0;
         }
       }else{
-        dc.setClip(124,69,22,17);
+        dc.setClip(132,69,22,17);
         if(count == 0){
           bmpMucciSit1.draw(dc);
           count = 1;
