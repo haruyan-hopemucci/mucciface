@@ -88,10 +88,15 @@ class muccifaceView extends WatchUi.WatchFace {
     function onPartialUpdate(dc as Dc){
       dc.setClip(80,170,44,34);
         var clockTime = System.getClockTime();
-        var viewSecond = View.findDrawableById("SecondLabel") as Text;
+        if(clockTime.sec == 0){
+          return;
+        }
+        // var viewSecond = View.findDrawableById("SecondLabel") as Text;
         var secString = Lang.format("$1$", [clockTime.sec.format("%02d")]);
-        viewSecond.setText(secString);
-        View.onUpdate(dc);
+        // viewSecond.setText(secString);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        dc.drawText(104, 170, Graphics.FONT_NUMBER_MILD, secString, Graphics.TEXT_JUSTIFY_CENTER);
+        // View.onUpdate(dc);
       // dc.setClip(124,96,18,18);
       /*
       dc.setClip(124,90,22,28);
@@ -109,23 +114,25 @@ class muccifaceView extends WatchUi.WatchFace {
           count = 0;
         }
       */
-      if(isWalking){
-        dc.setClip(124,90,22,28);
-        if(count == 0){
-          bmpMucciLarge1.draw(dc);
-          count = 1;
+      if(clockTime.sec % 2 == 0){
+        if(isWalking){
+          dc.setClip(124,90,22,28);
+          if(count == 0){
+            bmpMucciLarge1.draw(dc);
+            count = 1;
+          }else{
+            bmpMucciLarge2.draw(dc);
+            count = 0;
+          }
         }else{
-          bmpMucciLarge2.draw(dc);
-          count = 0;
-        }
-      }else{
-        dc.setClip(132,69,22,17);
-        if(count == 0){
-          bmpMucciSit1.draw(dc);
-          count = 1;
-        }else{
-          bmpMucciSit2.draw(dc);
-          count = 0;
+          dc.setClip(132,69,22,17);
+          if(count == 0){
+            bmpMucciSit1.draw(dc);
+            count = 1;
+          }else{
+            bmpMucciSit2.draw(dc);
+            count = 0;
+          }
         }
       }
     }

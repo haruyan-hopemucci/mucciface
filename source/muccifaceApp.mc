@@ -2,6 +2,9 @@ import Toybox.Application;
 import Toybox.Lang;
 import Toybox.WatchUi;
 
+var pbeFlg = false;
+var isSleep = false;
+
 class muccifaceApp extends Application.AppBase {
 
     function initialize() {
@@ -18,7 +21,7 @@ class muccifaceApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as Array<Views or InputDelegates>? {
-        return [ new muccifaceView() ] as Array<Views or InputDelegates>;
+        return [ new muccifaceView(), new muccifaceDelegate() ] as Array<Views or InputDelegates>;
     }
 
 }
