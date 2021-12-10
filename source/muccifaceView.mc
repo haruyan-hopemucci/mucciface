@@ -6,10 +6,6 @@ import Toybox.WatchUi;
 class muccifaceView extends WatchUi.WatchFace {
 
     var count as Number;
-    var bmpMucciL1;
-    var bmpMucciL2;
-    var bmpMucciR1;
-    var bmpMucciR2;
     var bmpMucciLarge1;
     var bmpMucciLarge2;
     var bmpMucciSit1;
@@ -22,28 +18,29 @@ class muccifaceView extends WatchUi.WatchFace {
     var walkStopTime;
     var isWalking;
     var _THRESHOLD_WALK_STOP = 60;
+    var centerLabelType;
 
     function initialize() {
         WatchFace.initialize();
         count = 0;
-        bmpMucciL1 = new WatchUi.Bitmap({
-          :rezId=>Rez.Drawables.BmpMucci1,
-          :locX=>124,
-          :locY=>96
-        });
-        bmpMucciL2 = new WatchUi.Bitmap({
-          :rezId=>Rez.Drawables.BmpMucci2,
-          :locX=>124,
-          :locY=>96
-        });
+        // bmpMucciL1 = new WatchUi.Bitmap({
+        //   :rezId=>Rez.Drawables.BmpMucci1,
+        //   :locX=>124,
+        //   :locY=>96
+        // });
+        // bmpMucciL2 = new WatchUi.Bitmap({
+        //   :rezId=>Rez.Drawables.BmpMucci2,
+        //   :locX=>124,
+        //   :locY=>96
+        // });
         bmpMucciLarge1 = new WatchUi.Bitmap({
           :rezId=>Rez.Drawables.BmpMucciL1,
-          :locX=>124,
+          :locX=>116,
           :locY=>90
         });
         bmpMucciLarge2 = new WatchUi.Bitmap({
           :rezId=>Rez.Drawables.BmpMucciL2,
-          :locX=>124,
+          :locX=>116,
           :locY=>90
         });
         // bmpMucciR1 = new WatchUi.Bitmap({
@@ -69,6 +66,7 @@ class muccifaceView extends WatchUi.WatchFace {
         memorySteps = -1;
         walkStopTime = Time.now();
         isWalking = true;
+        centerLabelType = 1;
     }
 
     // Load your resources here
@@ -98,25 +96,9 @@ class muccifaceView extends WatchUi.WatchFace {
         dc.drawText(104, 170, Graphics.FONT_NUMBER_MILD, secString, Graphics.TEXT_JUSTIFY_CENTER);
         // View.onUpdate(dc);
       // dc.setClip(124,96,18,18);
-      /*
-      dc.setClip(124,90,22,28);
-        if(count == 0){
-          // bmpMucciL1.draw(dc);
-          bmpMucciLarge1.draw(dc);
-          bmpMucciSit1.draw(dc);
-          // bmpMucciR1.draw(dc);
-          count = 1;
-        }else{
-          // bmpMucciL2.draw(dc);
-          bmpMucciLarge2.draw(dc);
-          bmpMucciSit2.draw(dc);
-          // bmpMucciR2.draw(dc);
-          count = 0;
-        }
-      */
       if(clockTime.sec % 2 == 0){
         if(isWalking){
-          dc.setClip(124,90,22,28);
+          dc.setClip(116,90,22,28);
           if(count == 0){
             bmpMucciLarge1.draw(dc);
             count = 1;
@@ -157,7 +139,21 @@ class muccifaceView extends WatchUi.WatchFace {
         var viewStep = View.findDrawableById("StepLabel") as Text;
         var info = ActivityMonitor.getInfo();
         var stepCount = info.steps;
-        var stepString = Lang.format("$1$", [stepCount]);
+        var stepString;
+        // settingにより歩数表示か距離表示を切替
+        centerLabelType = getApp().getProperty("CenterLabelType");
+        switch(centerLabelType){
+          case 0:
+            stepString = Lang.format("$1$", [stepCount]);
+            break;
+          case 1:
+            var df = info.distance.toFloat() / 100000.0;
+            var d = (df).format(df > 10.0 ? "%.1f" : "%.2f");
+            stepString = Lang.format("$1$km",[d]);
+            break;
+          default:
+            stepString = "MUCCI";
+        }
         viewStep.setText(stepString);
 
         var dayLabel = View.findDrawableById("DayLabel") as Text;

@@ -1,3 +1,6 @@
 <strings>
     <string id="AppName">mucciface_L</string>
+    <string id="CenterLabelTypeTitle">CenterLabelShown:</string>
+    <string id="LTypeStep">Steps</string>
+    <string id="LTypeDist">Distance</string>
 </strings>
