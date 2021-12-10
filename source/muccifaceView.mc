@@ -14,6 +14,7 @@ class muccifaceView extends WatchUi.WatchFace {
     var battOuter;
     var battCharge;
     var fontDigits;
+    var fontSteps;
     var memorySteps;
     var walkStopTime;
     var isWalking;
@@ -63,6 +64,7 @@ class muccifaceView extends WatchUi.WatchFace {
         bmpMucciSit1 = new WatchUi.Bitmap({:rezId=>Rez.Drawables.BmpMucciSit1, :locX=>132, :locY=>69});
         bmpMucciSit2 = new WatchUi.Bitmap({:rezId=>Rez.Drawables.BmpMucciSit2, :locX=>132, :locY=>69});
         fontDigits = WatchUi.loadResource( Rez.Fonts.font_digits );
+        fontSteps = WatchUi.loadResource( Rez.Fonts.font_steps );
         memorySteps = -1;
         walkStopTime = Time.now();
         isWalking = true;
@@ -74,6 +76,7 @@ class muccifaceView extends WatchUi.WatchFace {
         setLayout(Rez.Layouts.WatchFace(dc));
         View.findDrawableById("HLabel").setFont(fontDigits);
         View.findDrawableById("MLabel").setFont(fontDigits);
+        View.findDrawableById("StepLabel").setFont(fontSteps);
     }
 
     // Called when this View is brought to the foreground. Restore
