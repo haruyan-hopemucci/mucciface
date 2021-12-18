@@ -21,39 +21,47 @@ class muccifaceView extends WatchUi.WatchFace {
     var _THRESHOLD_WALK_STOP = 60;
     var centerLabelType;
 
+    // multiple devices 対応
+    var _jsonSettings;
+    var _screenWidth;
+    var _screenHeight;
+    var _mucciLTop;
+    var _mucciLLeft;
+    var _mucciSTop;
+    var _mucciSLeft;
+    var _battTop;
+    var _battLeft;
+    var _secCenter;
+    var _secClipTop;
+    var _secClipLeft;
+
     function initialize() {
         WatchFace.initialize();
         count = 0;
-        // bmpMucciL1 = new WatchUi.Bitmap({
-        //   :rezId=>Rez.Drawables.BmpMucci1,
-        //   :locX=>124,
-        //   :locY=>96
-        // });
-        // bmpMucciL2 = new WatchUi.Bitmap({
-        //   :rezId=>Rez.Drawables.BmpMucci2,
-        //   :locX=>124,
-        //   :locY=>96
-        // });
+        _screenWidth = System.getDeviceSettings().screenWidth;
+        _screenHeight = System.getDeviceSettings().screenHeight;
+        _jsonSettings = WatchUi.loadResource(Rez.JsonData.JsonSettings);
+        // jsonから設定を読み込む
+        _battLeft = _jsonSettings.get("battLeft");
+        _battTop = _jsonSettings.get("battTop");
+        _secCenter = _screenWidth / 2;
+        _secClipLeft = _secCenter - 22;
+        _secClipTop = _jsonSettings.get("secClipTop");
+        _mucciLLeft = _jsonSettings.get("mucciLLeft");
+        _mucciLTop = _jsonSettings.get("mucciLTop");
+        _mucciSLeft = _jsonSettings.get("mucciSLeft");
+        _mucciSTop = _jsonSettings.get("mucciSTop");
+
         bmpMucciLarge1 = new WatchUi.Bitmap({
           :rezId=>Rez.Drawables.BmpMucciL1,
-          :locX=>116,
-          :locY=>90
+          :locX=>_jsonSettings.get("mucciLLeft"),
+          :locY=>_jsonSettings.get("mucciLTop")
         });
         bmpMucciLarge2 = new WatchUi.Bitmap({
           :rezId=>Rez.Drawables.BmpMucciL2,
-          :locX=>116,
-          :locY=>90
+          :locX=>_jsonSettings.get("mucciLLeft"),
+          :locY=>_jsonSettings.get("mucciLTop")
         });
-        // bmpMucciR1 = new WatchUi.Bitmap({
-        //   :rezId=>Rez.Drawables.BmpMucci1,
-        //   :locX=>160,
-        //   :locY=>150
-        // });
-        // bmpMucciR2 = new WatchUi.Bitmap({
-        //   :rezId=>Rez.Drawables.BmpMucci2,
-        //   :locX=>160,
-        //   :locY=>150
-        // });
         shapes = new Rez.Drawables.shapes();
         battOuter = new Rez.Drawables.BattOuter();
         battCharge = new WatchUi.Bitmap({
@@ -61,8 +69,8 @@ class muccifaceView extends WatchUi.WatchFace {
           :locX=>132,
           :locY=>130
         });
-        bmpMucciSit1 = new WatchUi.Bitmap({:rezId=>Rez.Drawables.BmpMucciSit1, :locX=>132, :locY=>69});
-        bmpMucciSit2 = new WatchUi.Bitmap({:rezId=>Rez.Drawables.BmpMucciSit2, :locX=>132, :locY=>69});
+        bmpMucciSit1 = new WatchUi.Bitmap({:rezId=>Rez.Drawables.BmpMucciSit1, :locX=>_jsonSettings.get("mucciSLeft"), :locY=>_jsonSettings.get("mucciSTop")});
+        bmpMucciSit2 = new WatchUi.Bitmap({:rezId=>Rez.Drawables.BmpMucciSit2, :locX=>_jsonSettings.get("mucciSLeft"), :locY=>_jsonSettings.get("mucciSTop")});
         fontDigits = WatchUi.loadResource( Rez.Fonts.font_digits );
         fontSteps = WatchUi.loadResource( Rez.Fonts.font_steps );
         memorySteps = -1;
@@ -87,7 +95,8 @@ class muccifaceView extends WatchUi.WatchFace {
     }
 
     function onPartialUpdate(dc as Dc){
-      dc.setClip(80,170,44,34);
+      // dc.setClip(80,170,44,34);
+        dc.setClip(_secClipLeft,_secClipTop,44,34);
         var clockTime = System.getClockTime();
         if(clockTime.sec == 0){
           return;
@@ -96,12 +105,12 @@ class muccifaceView extends WatchUi.WatchFace {
         var secString = Lang.format("$1$", [clockTime.sec.format("%02d")]);
         // viewSecond.setText(secString);
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
-        dc.drawText(104, 170, Graphics.FONT_NUMBER_MILD, secString, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(_secCenter, _secClipTop, Graphics.FONT_NUMBER_MILD, secString, Graphics.TEXT_JUSTIFY_CENTER);
         // View.onUpdate(dc);
       // dc.setClip(124,96,18,18);
       if(clockTime.sec % 2 == 0){
         if(isWalking){
-          dc.setClip(116,90,22,28);
+          dc.setClip(_mucciLLeft,_mucciLTop,22,28);
           if(count == 0){
             bmpMucciLarge1.draw(dc);
             count = 1;
@@ -110,7 +119,7 @@ class muccifaceView extends WatchUi.WatchFace {
             count = 0;
           }
         }else{
-          dc.setClip(132,69,22,17);
+          dc.setClip(_mucciSLeft,_mucciSTop,22,17);
           if(count == 0){
             bmpMucciSit1.draw(dc);
             count = 1;
@@ -124,7 +133,7 @@ class muccifaceView extends WatchUi.WatchFace {
 
     // Update the view
     function onUpdate(dc as Dc) as Void {
-      dc.setClip(0,0,208,208);
+      dc.setClip(0,0,_screenWidth,_screenHeight);
         // Get and show the current time
         var clockTime = System.getClockTime();
         var hview = View.findDrawableById("HLabel") as Text;
@@ -214,7 +223,7 @@ class muccifaceView extends WatchUi.WatchFace {
         }
         // バッテリーグラフィック表示
         dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(126, 130, battValue*27/100, 13);
+        dc.fillRectangle(_battLeft, _battTop, battValue*27/100, 13);
         if(System.getSystemStats().charging){
           dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
           battCharge.draw(dc);

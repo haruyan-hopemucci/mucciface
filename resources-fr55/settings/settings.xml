@@ -1,0 +1,10 @@
+<settings>
+
+    <setting propertyKey="@Properties.CenterLabelType" title="@Strings.CenterLabelTypeTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.LTypeStep</listEntry>
+            <listEntry value="1">@Strings.LTypeDist</listEntry>
+        </settingConfig>
+    </setting>
+
+</settings>
