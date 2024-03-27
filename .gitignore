@@ -1,1 +1,4 @@
 bin
+bin/mucciface-settings.json
+bin/mucciface.prg
+bin/mucciface.prg.debug.xml
