@@ -1,0 +1,6 @@
+<resources>
+  <fonts>
+    <font id="font_digits" filename="./fonts/digits.fnt" />
+    <font id="font_steps" filename="./fonts/stepfont.fnt" />
+  </fonts>
+</resources>
