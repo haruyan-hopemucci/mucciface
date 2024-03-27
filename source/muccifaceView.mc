@@ -2,7 +2,9 @@ import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.System;
 import Toybox.WatchUi;
+import Toybox.Application.Properties;
 
+// for SDK 4.2.4
 class muccifaceView extends WatchUi.WatchFace {
 
     var count as Number;
@@ -40,7 +42,7 @@ class muccifaceView extends WatchUi.WatchFace {
         count = 0;
         _screenWidth = System.getDeviceSettings().screenWidth;
         _screenHeight = System.getDeviceSettings().screenHeight;
-        _jsonSettings = WatchUi.loadResource(Rez.JsonData.JsonSettings);
+        _jsonSettings = Application.loadResource(Rez.JsonData.JsonSettings) as Lang.Dictionary;
         // jsonから設定を読み込む
         _battLeft = _jsonSettings.get("battLeft");
         _battTop = _jsonSettings.get("battTop");
@@ -82,9 +84,12 @@ class muccifaceView extends WatchUi.WatchFace {
     // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.WatchFace(dc));
-        View.findDrawableById("HLabel").setFont(fontDigits);
-        View.findDrawableById("MLabel").setFont(fontDigits);
-        View.findDrawableById("StepLabel").setFont(fontSteps);
+        var hLabel = View.findDrawableById("HLabel") as Text;
+        hLabel.setFont(fontDigits);
+        var mLabel = View.findDrawableById("MLabel") as Text;
+        mLabel.setFont(fontDigits);
+        var stepLabel = View.findDrawableById("StepLabel") as Text;
+        stepLabel.setFont(fontSteps);
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -153,7 +158,8 @@ class muccifaceView extends WatchUi.WatchFace {
         var stepCount = info.steps;
         var stepString;
         // settingにより歩数表示か距離表示を切替
-        centerLabelType = getApp().getProperty("CenterLabelType");
+        // centerLabelType = getApp(). ("CenterLabelType");
+        centerLabelType = Properties.getValue("CenterLabelType");
         switch(centerLabelType){
           case 0:
             stepString = Lang.format("$1$", [stepCount]);
