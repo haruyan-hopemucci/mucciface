@@ -1,3 +1,10 @@
 <jsonDataResources>
-   <jsonData id="JsonSettings" filename="settings.json" />
+  <jsonData id="JsonSettings" filename="settings.json" />
+  <jsonData id="mucciLLeft">256</jsonData>
+  <jsonData id="mucciLTop">212</jsonData>
+  <jsonData id="mucciSLeft">264</jsonData>
+  <jsonData id="mucciSTop">170</jsonData>
+  <jsonData id="battLeft">251</jsonData>
+  <jsonData id="battTop">295</jsonData>
+  <jsonData id="mucciLabelPos">[280,128]</jsonData>
 </jsonDataResources>

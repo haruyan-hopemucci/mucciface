@@ -3,9 +3,9 @@
   "mucciLTop": 106,
   "mucciSLeft": 132,
   "mucciSTop": 85,
-  "battLeft": 126,
-  "battTop": 144,
-  "secClipTop": 200,
+  "battLeft": 252,
+  "battTop": 288,
+  "secClipTop": 400,
 
-  "target": "fr645"
+  "target": "fr965"
 }

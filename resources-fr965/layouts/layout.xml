@@ -1,11 +1,11 @@
 <layout id="WatchFace">
-    <label id="DayLabel" x="120" y="35" font="Graphics.FONT_LARGE" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
+    <label id="DayLabel" x="240" y="70" font="Graphics.FONT_LARGE" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
     <label id="HLabel" x="28" y="19" font="Graphics.FONT_NUMBER_THAI_HOT" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
     <label id="MLabel" x="28" y="94" font="Graphics.FONT_NUMBER_HOT" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
     <!-- <label id="MLabel" x="35" y="70" font="Rez.Fonts.font_digits" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" /> -->
-    <label id="SecondLabel" x="center" y="200" font="Graphics.FONT_NUMBER_MILD" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
-    <label id="StepLabel" x="156" y="104" font="Graphics.FONT_TINY" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
-    <label id="BattLabel" x="160" y="138" font="Graphics.FONT_SMALL" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
+    <label id="SecondLabel" x="center" y="360" font="Graphics.FONT_NUMBER_MILD" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    <label id="StepLabel" x="296" y="216" font="Graphics.FONT_SMALL" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
+    <label id="BattLabel" x="320" y="280" font="Graphics.FONT_SMALL" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
     <!-- <label id="MuttiLogoLabel" x="156" y="64" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" text="MUCCI" /> -->
     <!-- <bitmap id="BmpMucciLeft" x="30" y="150" filename="./images/mucci1.png" />
     <bitmap id="BmpMucciRight" x="160" y="150" filename="./images/mucci2.png" /> -->

@@ -5,11 +5,11 @@
     <bitmap id="BmpMucciSit1" filename="./images/mucci_sit_1.png" />
     <bitmap id="BmpMucciSit2" filename="./images/mucci_sit_2.png" />
     <bitmap id="BmpCharge" filename="./images/chargeicon.png" />
-    <drawable-list id="shapes" x="116" y="100" width="104" height="40" background="Graphics.COLOR_TRANSPARENT">
-      <shape type="rectangle" x="0" y="0" width="200" height="40" color="Graphics.COLOR_TRANSPARENT" border_color="Graphics.COLOR_WHITE" border_width="2" corner_radius="20" />
+    <drawable-list id="shapes" x="232" y="200" width="208" height="80" background="Graphics.COLOR_TRANSPARENT">
+      <shape type="rectangle" x="0" y="0" width="400" height="80" color="Graphics.COLOR_TRANSPARENT" border_color="Graphics.COLOR_WHITE" border_width="4" corner_radius="40" />
     </drawable-list>
-    <drawable-list id="BattOuter" x="124" y="142" background="Graphics.COLOR_TRANSPARENT">
-      <shape type="rectangle" x="0" y="0" width="32" height="18" color="Graphics.COLOR_TRANSPARENT" border_color="Graphics.COLOR_WHITE" border_width="1" />
-      <shape type="rectangle" x="31" y="6" width="2" height="6" color="Graphics.COLOR_WHITE" />
+    <drawable-list id="BattOuter" x="248" y="290" background="Graphics.COLOR_TRANSPARENT">
+      <shape type="rectangle" x="0" y="0" width="64" height="36" color="Graphics.COLOR_TRANSPARENT" border_color="Graphics.COLOR_WHITE" border_width="2" />
+      <shape type="rectangle" x="62" y="12" width="4" height="12" color="Graphics.COLOR_WHITE" />
     </drawable-list>
 </drawables>

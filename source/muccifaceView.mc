@@ -36,33 +36,37 @@ class muccifaceView extends WatchUi.WatchFace {
     var _secCenter;
     var _secClipTop;
     var _secClipLeft;
+    var _mucciLabelPos;
 
     function initialize() {
         WatchFace.initialize();
         count = 0;
         _screenWidth = System.getDeviceSettings().screenWidth;
         _screenHeight = System.getDeviceSettings().screenHeight;
-        _jsonSettings = Application.loadResource(Rez.JsonData.JsonSettings) as Lang.Dictionary;
+        _jsonSettings = WatchUi.loadResource($.Rez.JsonData.JsonSettings) as Lang.Dictionary;
         // jsonから設定を読み込む
-        _battLeft = _jsonSettings.get("battLeft");
-        _battTop = _jsonSettings.get("battTop");
+        // _battLeft = _jsonSettings.get("battLeft");
+        _battLeft = WatchUi.loadResource($.Rez.JsonData.battLeft);
+        // _battTop = _jsonSettings.get("battTop");
+        _battTop = WatchUi.loadResource($.Rez.JsonData.battTop);
         _secCenter = _screenWidth / 2;
         _secClipLeft = _secCenter - 22;
-        _secClipTop = _jsonSettings.get("secClipTop");
-        _mucciLLeft = _jsonSettings.get("mucciLLeft");
-        _mucciLTop = _jsonSettings.get("mucciLTop");
-        _mucciSLeft = _jsonSettings.get("mucciSLeft");
-        _mucciSTop = _jsonSettings.get("mucciSTop");
+        // _secClipTop = _jsonSettings.get("secClipTop");
+        _mucciLLeft = WatchUi.loadResource($.Rez.JsonData.mucciLLeft);
+        _mucciLTop = WatchUi.loadResource($.Rez.JsonData.mucciLTop);
+        _mucciSLeft = WatchUi.loadResource($.Rez.JsonData.mucciSLeft);
+        _mucciSTop = WatchUi.loadResource($.Rez.JsonData.mucciSTop);
+        _mucciLabelPos = WatchUi.loadResource($.Rez.JsonData.mucciLabelPos) as Array<Number>;
 
         bmpMucciLarge1 = new WatchUi.Bitmap({
           :rezId=>Rez.Drawables.BmpMucciL1,
-          :locX=>_jsonSettings.get("mucciLLeft"),
-          :locY=>_jsonSettings.get("mucciLTop")
+          :locX=>_mucciLLeft,
+          :locY=>_mucciLTop
         });
         bmpMucciLarge2 = new WatchUi.Bitmap({
           :rezId=>Rez.Drawables.BmpMucciL2,
-          :locX=>_jsonSettings.get("mucciLLeft"),
-          :locY=>_jsonSettings.get("mucciLTop")
+          :locX=>_mucciLLeft,
+          :locY=>_mucciLTop
         });
         shapes = new Rez.Drawables.shapes();
         battOuter = new Rez.Drawables.BattOuter();
@@ -88,8 +92,8 @@ class muccifaceView extends WatchUi.WatchFace {
         hLabel.setFont(fontDigits);
         var mLabel = View.findDrawableById("MLabel") as Text;
         mLabel.setFont(fontDigits);
-        var stepLabel = View.findDrawableById("StepLabel") as Text;
-        stepLabel.setFont(fontSteps);
+        // var stepLabel = View.findDrawableById("StepLabel") as Text;
+        // stepLabel.setFont(fontSteps);
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -210,7 +214,7 @@ class muccifaceView extends WatchUi.WatchFace {
         shapes.draw(dc);
         if(isWalking){
           dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-          dc.drawText(140, 64, Graphics.FONT_XTINY, "MUCCI", Graphics.TEXT_JUSTIFY_LEFT);
+          dc.drawText(_mucciLabelPos[0], _mucciLabelPos[1], Graphics.FONT_TINY, "MUCCI", Graphics.TEXT_JUSTIFY_LEFT);
           if(count == 0){
             bmpMucciLarge1.draw(dc);
             count = 1;
@@ -229,7 +233,7 @@ class muccifaceView extends WatchUi.WatchFace {
         }
         // バッテリーグラフィック表示
         dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(_battLeft, _battTop, battValue*27/100, 13);
+        dc.fillRectangle(_battLeft, _battTop, battValue*54/100, 26);
         if(System.getSystemStats().charging){
           dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
           battCharge.draw(dc);
